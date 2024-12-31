@@ -31,4 +31,4 @@ const phrase = (mot) => {
   phrrase += majuscule;
   return phrrase;
 };
-console.log(phrase("jean-pierre"));
+console.log(phrase("herve"));
