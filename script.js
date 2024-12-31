@@ -45,4 +45,10 @@ const finishPoint = () => {
 };
 console.log(finishPoint());
 // *****************
-const numberOfOccurence = (word) => {};
+function countOccurrences(str, letter) {
+  return str.split("").filter((char) => char === letter).length;
+}
+
+const text = "hello world";
+const letter = "o";
+console.log(countOccurrences(text, letter));
