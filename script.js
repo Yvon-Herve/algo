@@ -25,12 +25,7 @@ calculLetter("Bonjour le monde !");
 // et renvoie une salutation personnalisée en mettant la première lettre en majuscule.
 // Cas d'usage: Système de messagerie automatique ou e-mailing Entrée
 // : "jean-pierre" Sortie attendue : "Bonjour Jean-Pierre"
-const phrase = (mot) => {
-  let phrrase = "Bonjour";
-  let majuscule = mot.charAt(0).toUpperCase() + mot.slice(1);
-  phrrase += majuscule;
-  return phrrase;
-};
+
 const helloUser = (mot) => {
   let phrase = "Bonjour";
   let majuscule = mot.charAt(0).toUpperCase() + mot.slice(1);
@@ -38,3 +33,15 @@ const helloUser = (mot) => {
   return phrase;
 };
 console.log(helloUser("herve"));
+// ***************
+const finishPoint = () => {
+  let phrase = "je suis aller a la boulangerie ";
+  let derniereLettre = phrase.slice(-1);
+  if (derniereLettre === "!") {
+    return true;
+  } else {
+    return false;
+  }
+};
+console.log(finishPoint());
+// *****************
