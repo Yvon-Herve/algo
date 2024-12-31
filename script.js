@@ -31,4 +31,10 @@ const phrase = (mot) => {
   phrrase += majuscule;
   return phrrase;
 };
-console.log(phrase("herve"));
+const helloUser = (mot) => {
+  let phrase = "Bonjour";
+  let majuscule = mot.charAt(0).toUpperCase() + mot.slice(1);
+  phrase += majuscule;
+  return phrase;
+};
+console.log(helloUser("herve"));
