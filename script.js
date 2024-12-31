@@ -45,3 +45,4 @@ const finishPoint = () => {
 };
 console.log(finishPoint());
 // *****************
+const numberOfOccurence = (word) => {};
