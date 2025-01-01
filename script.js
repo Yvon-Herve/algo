@@ -49,6 +49,6 @@ function countOccurrences(str, letter) {
   return str.split("").filter((char) => char === letter).length;
 }
 
-const text = "je verifie un nouveau  truc";
-const letter = "u";
+const text = "je verifie une chose importante";
+const letter = "o";
 console.log(countOccurrences(text, letter));
