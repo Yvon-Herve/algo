@@ -11,8 +11,7 @@ document.getElementById("output").textContent = "La somme est : " + sum;
 // ***************************
 // Créez une fonction qui prend une chaîne de caractères en paramètre
 //  et retourne sa longueur après avoir supprimé tous les espaces.
-// Case d'usage possible: Validation de la longueur d'un tweet ou d'un message SMS Entrée
-//  : "Bonjour le monde !" Sortie attendue : 16 caractères
+
 const calculLetter = (word) => {
   // Supprimer uniquement les espaces
   let oneWord = word.replace(/\s/g, "");
@@ -23,8 +22,6 @@ calculLetter("Bonjour le monde !");
 
 //2 Développez une fonction qui accepte un prénom en paramètre
 // et renvoie une salutation personnalisée en mettant la première lettre en majuscule.
-// Cas d'usage: Système de messagerie automatique ou e-mailing Entrée
-// : "jean-pierre" Sortie attendue : "Bonjour Jean-Pierre"
 
 const helloUser = (mot) => {
   let phrase = "Bonjour";
@@ -34,6 +31,9 @@ const helloUser = (mot) => {
 };
 console.log(helloUser("herve"));
 // ***************
+
+// fonction qui détermine si une chaîne de caractères se termine par un point d'exclamation.
+
 const finishPoint = () => {
   let phrase = "je suis aller a la boulangerie ";
   let derniereLettre = phrase.slice(-1);
@@ -45,10 +45,23 @@ const finishPoint = () => {
 };
 console.log(finishPoint());
 // *****************
-function countOccurrences(str, letter) {
+
+// fonction qui compte le nombre d'occurrences d'une lettre dans une chaîne
+const countOccurrences = (str, letter) => {
   return str.split("").filter((char) => char === letter).length;
-}
+};
 
 const text = "je verifie une chose importante";
-const letter = "o";
+const letter = "e";
 console.log(countOccurrences(text, letter));
+// ************************
+
+// fonction qui convertit une chaîne en "camelCase"
+const toCamelCase = (str) => {
+  let result = str
+    .toLowerCase() // Convertir tout en minuscule
+    .replace(/[-_\s]+(.)?/g, (match, char) => (char ? char.toUpperCase() : "")); // Capitaliser après les séparateurs
+  return result;
+};
+
+console.log(toCamelCase("convertir_en_camel_case"));
