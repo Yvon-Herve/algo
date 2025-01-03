@@ -90,3 +90,18 @@ const alternerMajusculesMinuscules = (chaine) =>
 console.log(alternerMajusculesMinuscules("bonjour tout le monde"));
 // *****************
 // fonction qui alterne majuscules et minuscules dans une chaîne
+const alternerMajusculesMinuscules = (chaine) => {
+  let compteur = 0;
+  return [...chaine]
+    .map((char) => {
+      if (/[a-zA-Z]/.test(char)) {
+        return compteur++ % 2 === 0 ? char.toUpperCase() : char.toLowerCase();
+      }
+      return char;
+    })
+    .join("");
+};
+
+// Exemple d'utilisation :
+console.log(alternerMajusculesMinuscules("Bonjour, comment ça va ?"));
+// Résultat : "BoNjOuR, cOmMeNt çA vA ?"
