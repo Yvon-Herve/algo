@@ -65,3 +65,15 @@ const toCamelCase = (str) => {
 };
 
 console.log(toCamelCase("convertir_en_camel_case"));
+// *********************
+//fonction qui compte le nombre de voyelle
+
+const compterVoyelles = (chaine) => {
+  const voyelles = "aeiouAEIOU";
+  return [...chaine].reduce(
+    (compteur, char) => (voyelles.includes(char) ? compteur + 1 : compteur),
+    0
+  );
+};
+
+console.log(compterVoyelles("Bonjour, comment ça va ?")); // Résultat : 9
