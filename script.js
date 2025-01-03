@@ -88,3 +88,5 @@ const alternerMajusculesMinuscules = (chaine) =>
     .join("");
 
 console.log(alternerMajusculesMinuscules("bonjour tout le monde"));
+// *****************
+// fonction qui alterne majuscules et minuscules dans une chaîne
