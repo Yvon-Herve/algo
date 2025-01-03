@@ -77,3 +77,14 @@ const compterVoyelles = (chaine) => {
 };
 
 console.log(compterVoyelles("Bonjour, comment ça va ?")); // Résultat : 9
+// **************
+
+// fonction qui compte le nombre de voyelles dans une chaîne
+const alternerMajusculesMinuscules = (chaine) =>
+  [...chaine]
+    .map((char, index) =>
+      index % 2 === 0 ? char.toUpperCase() : char.toLowerCase()
+    )
+    .join("");
+
+console.log(alternerMajusculesMinuscules("bonjour tout le monde"));
