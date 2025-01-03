@@ -102,6 +102,4 @@ const alternerMajusculesMinuscules = (chaine) => {
     .join("");
 };
 
-// Exemple d'utilisation :
 console.log(alternerMajusculesMinuscules("Bonjour, comment ça va ?"));
-// Résultat : "BoNjOuR, cOmMeNt çA vA ?"
